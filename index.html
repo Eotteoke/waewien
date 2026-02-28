@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wae Wien — Thai Restaurant & Café</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Kanit:wght@300;400;500;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="nav-logo">
+                <img src="logobg.png" alt="Wae Wien Logo" class="logo-img">
+            </a>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#menu" class="nav-link">Menu</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#location" class="nav-link">Location</a></li>
+            </ul>
+            <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero / Home Section -->
+    <section id="home" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <img src="logobg.png" alt="Wae Wien Logo" class="hero-logo">
+            <p class="hero-tagline">Authentic Thai Cuisine & Café</p>
+            <p class="hero-description">Experience authentic Thai flavors in a warm and cozy atmosphere.</p>
+            <div class="hero-buttons">
+                <a href="#menu" class="btn btn-primary">Explore Menu</a>
+                <a href="#location" class="btn btn-outline">Visit Us</a>
+            </div>
+        </div>
+        <div class="hero-scroll">
+            <span>Scroll Down</span>
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="section menu-section">
+        <div class="container">
+            <div class="section-header">
+                <p class="section-subtitle">Our Menu</p>
+                <h2 class="section-title">Signature Dishes</h2>
+                <p class="section-desc">Premium ingredients, prepared with authentic Thai recipes</p>
+            </div>
+
+            <!-- Menu Filter -->
+            <div class="menu-filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="appetizer">Appetizers</button>
+                <button class="filter-btn" data-filter="main">Main Courses</button>
+                <button class="filter-btn" data-filter="noodle">Noodles</button>
+                <button class="filter-btn" data-filter="cafe">Café & Drinks</button>
+                <button class="filter-btn" data-filter="dessert">Desserts</button>
+            </div>
+
+            <!-- Menu Grid -->
+            <div class="menu-grid">
+                <div class="menu-card" data-category="noodle">
+                    <div class="menu-card-img" style="background-image: url('khaosoi.jpg')">
+                        <span class="menu-badge">Signature</span>
+                    </div>
+                    <div class="menu-card-body">
+                        <div class="menu-card-header">
+                            <h3>Khao Soi</h3>
+                            <span class="menu-price">£13.95</span>
+                        </div>
+                        <p class="menu-card-name">Beef / Chicken Curry Noodle Soup</p>
+                        <p class="menu-card-desc">Smooth curry noodle soup with flat egg noodles served with sour mustard pickled, chopped red onion and chilli oil</p>
+                        <div class="menu-tags">
+                            <span class="tag spicy">🌶️ Spicy</span>
+                            <span class="tag">Noodles</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card" data-category="appetizer">
+                    <div class="menu-card-img" style="background-image: url('somtom.jpg')">
+                    </div>
+                    <div class="menu-card-body">
+                        <div class="menu-card-header">
+                            <h3>Thai Papaya Salad</h3>
+                            <span class="menu-price">£11.95</span>
+                        </div>
+                        <p class="menu-card-name">Som Tum</p>
+                        <p class="menu-card-desc">Spicy green papaya salad with dried shrimp, peanuts, and zesty lime dressing</p>
+                        <div class="menu-tags">
+                            <span class="tag spicy">🌶️ Spicy</span>
+                            <span class="tag">Salad</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card" data-category="appetizer">
+                    <div class="menu-card-img" style="background-image: url('tomyum.jpg')">
+                    </div>
+                    <div class="menu-card-body">
+                        <div class="menu-card-header">
+                            <h3>Tom Yum</h3>
+                            <span class="menu-price">£7.95</span>
+                        </div>
+                        <p class="menu-card-name">Spicy Thai Soup</p>
+                        <p class="menu-card-desc">Classic hot and sour Thai soup with aromatic herbs and spices</p>
+                        <div class="menu-tags">
+                            <span class="tag spicy">🌶️ Spicy</span>
+                            <span class="tag">Soup</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card" data-category="appetizer">
+                    <div class="menu-card-img" style="background-image: url('tomkha.jpg')">
+                    </div>
+                    <div class="menu-card-body">
+                        <div class="menu-card-header">
+                            <h3>Tom Kha</h3>
+                            <span class="menu-price">£7.95</span>
+                        </div>
+                        <p class="menu-card-name">Coconut Galangal Soup</p>
+                        <p class="menu-card-desc">Creamy coconut soup with galangal, lemongrass, and mushrooms</p>
+                        <div class="menu-tags">
+                            <span class="tag">Mild</span>
+                            <span class="tag">Soup</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card" data-category="appetizer">
+                    <div class="menu-card-img" style="background-image: url('dumpling.jpg')">
+                    </div>
+                    <div class="menu-card-body">
+                        <div class="menu-card-header">
+                            <h3>Pork & Prawn Dumpling</h3>
+                            <span class="menu-price">£7.95</span>
+                        </div>
+                        <p class="menu-card-name">Steamed Dumplings</p>
+                        <p class="menu-card-desc">Handmade steamed dumplings filled with seasoned pork and prawn</p>
+                        <div class="menu-tags">
+                            <span class="tag">Steamed</span>
+                            <span class="tag">Starter</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card" data-category="appetizer">
+                    <div class="menu-card-img" style="background-image: url('larb.jpg')">
+                    </div>
+                    <div class="menu-card-body">
+                        <div class="menu-card-header">
+                            <h3>Laab Kai</h3>
+                            <span class="menu-price">£13.95</span>
+                        </div>
+                        <p class="menu-card-name">Spicy Minced Chicken Salad</p>
+                        <p class="menu-card-desc">Spicy minced chicken with herbs, seasoned with chilli powder, lemon juice, and rice powder</p>
+                        <div class="menu-tags">
+                            <span class="tag spicy">🌶️ Spicy</span>
+                            <span class="tag">Salad</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card" data-category="appetizer">
+                    <div class="menu-card-img" style="background-image: url('shrimptemp.jpg')">
+                    </div>
+                    <div class="menu-card-body">
+                        <div class="menu-card-header">
+                            <h3>Shrimp Tempura</h3>
+                            <span class="menu-price">£8.95</span>
+                        </div>
+                        <p class="menu-card-name">Crispy Battered Shrimp</p>
+                        <p class="menu-card-desc">Golden crispy shrimp tempura served with sweet chilli dipping sauce</p>
+                        <div class="menu-tags">
+                            <span class="tag">Crispy</span>
+                            <span class="tag">Starter</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card" data-category="main">
+                    <div class="menu-card-img" style="background-image: url('greencurry.jpg')">
+                    </div>
+                    <div class="menu-card-body">
+                        <div class="menu-card-header">
+                            <h3>Green Curry</h3>
+                            <span class="menu-price">£10.95</span>
+                        </div>
+                        <p class="menu-card-name">Thai Green Curry</p>
+                        <p class="menu-card-desc">Rich coconut green curry with Thai eggplant, bamboo shoots, and fresh basil</p>
+                        <div class="menu-tags">
+                            <span class="tag spicy">🌶️ Spicy</span>
+                            <span class="tag">Curry</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card" data-category="noodle">
+                    <div class="menu-card-img" style="background-image: url('braisenood.jpg')">
+                    </div>
+                    <div class="menu-card-body">
+                        <div class="menu-card-header">
+                            <h3>Braised Noodle Soup</h3>
+                            <span class="menu-price">£13.95</span>
+                        </div>
+                        <p class="menu-card-name">Beef / Chicken Rice Noodles</p>
+                        <p class="menu-card-desc">Braised beef or chicken rice noodles soup with bean sprouts</p>
+                        <div class="menu-tags">
+                            <span class="tag">Soup</span>
+                            <span class="tag">Noodles</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card" data-category="main">
+                    <div class="menu-card-img" style="background-image: url('basil.jpg')">
+                    </div>
+                    <div class="menu-card-body">
+                        <div class="menu-card-header">
+                            <h3>Basil & Chilli</h3>
+                            <span class="menu-price">£10.95</span>
+                        </div>
+                        <p class="menu-card-name">Pad Kra Pao</p>
+                        <p class="menu-card-desc">Stir fried chilli and basil leaves, green beans and onion</p>
+                        <div class="menu-tags">
+                            <span class="tag spicy">🌶️ Spicy</span>
+                            <span class="tag">Stir-Fry</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card" data-category="dessert">
+                    <div class="menu-card-img" style="background-image: url('mango.jpg')">
+                    </div>
+                    <div class="menu-card-body">
+                        <div class="menu-card-header">
+                            <h3>Mango Sticky Rice</h3>
+                            <span class="menu-price">£7.95</span>
+                        </div>
+                        <p class="menu-card-name">Khao Niao Mamuang</p>
+                        <p class="menu-card-desc">Fresh mango served with coconut-marinated sticky rice</p>
+                        <div class="menu-tags">
+                            <span class="tag">Sweet</span>
+                            <span class="tag">Dessert</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Full Menu Section -->
+    <section class="section full-menu-section">
+        <div class="container">
+            <div class="section-header">
+                <p class="section-subtitle">Full Menu</p>
+                <h2 class="section-title">Our Complete Menu</h2>
+            </div>
+            <div class="full-menu-images">
+                <img src="1.png" alt="Menu Page 1">
+                <img src="2.png" alt="Menu Page 2">
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="section about-section">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-images">
+                    <div class="about-img-main">
+                        <img src="about_pic.jpg" alt="Waewien Thai Cafe">
+                    </div>
+                    <div class="about-stats">
+                        <div class="stat">
+                            <span class="stat-number" data-target="15">0</span>
+                            <span class="stat-label">Years of Experience</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number" data-target="50">0</span>
+                            <span class="stat-label">Menu Items</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-content">
+                    <p class="section-subtitle">Our Story</p>
+                    <h2 class="section-title">About Us</h2>
+                    <p class="about-text">
+                        Hello, and welcome to Wae Wien Thai Cafe! Here at Wae Wien we have much to offer; from the infamous Thai Green Curry to street food stars like our home-made grilled pork - or 'moo yang'.
+                    </p>
+                    <p class="about-text">
+                        We are a family business consisting of Bank, a highly experienced chef not only in Thai cuisine but also in pub food, Japanese cuisine, steak house, and more. The next member: Eang, a house cook since her earliest years of life, and an all-rounded baker specialising in Thai desserts and cakes. Finally, there's me, Bank and Eang's only daughter, the sponge that's absorbed my parents' cooking skills for as long as I can remember.
+                    </p>
+                    <p class="about-text">
+                        We are a family that love food and love sharing the warmth that comes with cooking; both literally and figuratively. We believe that relationships are strengthened over a good meal, and so we hope that you, dear customer, will leave Wae Wien with nothing but a smile and a full stomach (maybe a takeaway), and will return for another meal.
+                    </p>
+                    <p class="about-text">
+                        Our name, Wae Wien, means 'pop in'. We are overjoyed that on a random day like this, something in you decided to pop into our cafe, and knowing this drives us all to deliver nothing but the best to your table.
+                    </p>
+                    <p class="about-text">
+                        Read the menu, take a good look at the pictures, and make sure to try something new. We hope you enjoy!
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="location" class="section location-section">
+        <div class="container">
+            <div class="section-header">
+                <p class="section-subtitle">Find Us</p>
+                <h2 class="section-title">Visit Us</h2>
+                <p class="section-desc">Open every day — we welcome you with a smile</p>
+            </div>
+
+            <div class="location-grid">
+                <div class="location-info">
+                    <div class="info-card">
+                        <div class="info-icon">📍</div>
+                        <div>
+                            <h3>Address</h3>
+                            <p>3 Market Place<br>Acton<br>London W3 6QS</p>
+                        </div>
+                    </div>
+                    <div class="info-card">
+                        <div class="info-icon">🕐</div>
+                        <div>
+                            <h3>Opening Hours</h3>
+                            <div class="hours-grid">
+                                <span>Monday — Friday</span>
+                                <span>08:00 — 22:00</span>
+                                <span>Saturday — Sunday</span>
+                                <span>09:00 — 23:00</span>
+                                <span>Holidays</span>
+                                <span>10:00 — 21:00</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="info-card">
+                        <div class="info-icon">📞</div>
+                        <div>
+                            <h3>Contact</h3>
+                            <p>Tel: 02-123-4567<br>Email: hello@waewien.com</p>
+                        </div>
+                    </div>
+                    <div class="info-card">
+                        <div class="info-icon">🚗</div>
+                        <div>
+                            <h3>Getting Here</h3>
+                            <p>Acton Town Station — 5-minute walk<br>Bus routes: 207, 427, E3<br>Street parking available nearby</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="location-map">
+                    <a href="https://maps.app.goo.gl/PwTKcuf5cpW1mMcx5?g_st=il" target="_blank" rel="noopener noreferrer">
+                        <div class="map-placeholder">
+                            <div class="map-decoration">
+                                <div class="map-pin">📍</div>
+                                <p>Waewien Thai Cafe</p>
+                                <span>3 Market Place, Acton, London W3 6QS</span>
+                                <p class="map-cta">Click to open in Google Maps</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <img src="logobg.png" alt="Wae Wien Logo" class="logo-img">
+                    </div>
+                    <p>Authentic Thai Cuisine & Café — Experience true Thai flavors in a warm atmosphere</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link" aria-label="Facebook">FB</a>
+                        <a href="#" class="social-link" aria-label="Instagram">IG</a>
+                        <a href="#" class="social-link" aria-label="Line">LINE</a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#menu">Menu</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#location">Location</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contact Us</h4>
+                    <p>3 Market Place, Acton</p>
+                    <p>London W3 6QS</p>
+                    <p>Tel: 02-123-4567</p>
+                    <p>hello@waewien.com</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Wae Wien — Thai Restaurant & Café. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
